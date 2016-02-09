@@ -1,0 +1,88 @@
+
+.sidebar-nav{
+    top:100px;
+
+}
+#display, #page-content-wrapper{
+    top:100px;
+}
+.navigation-header, .navbar{
+    background-color: #1c3a57;
+}
+.navbar-brand{
+    padding-right: 25px;
+    border-right:1px solid #2E2E2E;
+}
+
+.btn, .btn-info{
+    float:right;
+    width:100px;
+    height:40px;
+
+}
+
+#button{
+	vertical-align: bottom;
+    margin:5px;
+    float:right;
+}
+#display{
+    background-image:url("Images/homewall.jpg");
+
+}
+
+h1{
+    text-align:center;
+    padding:200px;
+    color:white;
+}
+
+
+h2{
+    padding-top:200px;
+}
+
+h5{
+    padding-top:50px;
+}
+
+#div2{
+    margin-top:100px;
+    text-decoration:bold;
+    text-align:center;
+}
+
+#div3{
+    margin:top:200px;
+}
+
+#div4{
+     padding-top:100px;
+}
+th{
+    text-decoration:none;
+}
+td,th{
+	width:300px;
+}
+th{
+	color:#585858;
+	text-align:center;
+}
+#link{
+    padding-top:50px;
+    text-align:center;
+}
+.table-bordered{
+	border-color:#0A0A2A;
+	border-width:10px;
+}
+
+.center {
+  text-align:center;
+}
+
+.title{
+  margin-top:100px;
+  font-size:200%;
+}

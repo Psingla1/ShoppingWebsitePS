@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PS Website</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/dist/css/bootstrap.css">
+
+    <!-- Custom CSS -->
+    <link href="CSS/simple-sidebar.css" rel="stylesheet">
+    <link href="CSS/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Product Lists</a>
+            </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only"> Toggle navigation </span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="homepage.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+      </div>
+    </nav>
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav" id="unordered_list">
+                <li>
+                    <a href="#" onclick="display('Cars')" id="cars">Cars</a>
+                </li>
+                <li >
+                    <a href="#" onclick="display('Bikes')" id="bikes">Bikes</a>
+                </li>
+                <li >
+                    <a href="#" onclick="display('Laptops')" id="laptops">Laptops</a>
+                </li>
+
+                <li>
+                    <a href="#"  onclick="display('Phones')" id="phones">Phones</a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <div id= "display">  </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+    <script src="js/productDisplayJS.js"></script>
+
+    <script>
+    // Display the data from the accurate JSON File
+    function display(str){
+            getVar="js/"+ str +"Data";
+            var addScript = document.createElement("script");
+            addScript.type = "text/javascript";
+            addScript.src = getVar + ".js";
+            (document.getElementsByTagName("head")[0] || document.documentElement ).appendChild(addScript);
+    } 
+    </script>
+</body>
+</html>
